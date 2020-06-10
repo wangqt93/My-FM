@@ -1,0 +1,114 @@
+/*样式初始化*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+#music {
+    height: 100vh;
+} */
+/* 页面背景 */
+/* .backdrop { 
+    background: url(image/backdrop.jpg) center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -10px;
+    bottom: -10px;
+    right: -10px;
+    filter: blur(4px);
+}
+.backdrop::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4)
+} */
+/* 主体-上半部 */
+ #music-main {
+     height: 75vh;
+ }
+
+/* 主体-下半部 */
+#music-footer {
+    height: 25vh;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+}
+#music-footer .iconfont {
+    font-size: 7rem;
+    color:#fff;
+    opacity: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 2;
+}
+.iconfont.rightbtn {
+    margin-right: 1rem;
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.iconfont.leftbtn {
+    position: absolute;
+    left: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#music-footer:hover .iconfont {
+    opacity: 0.3;
+}
+/* 音乐图 */
+#music-footer #image {
+    width: 80rem;
+    height: 24vh;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%); 
+
+    overflow: hidden;
+}
+#image .item {
+    display: flex;
+    position: absolute;
+    left:0;
+    transition: all .3s;
+}
+#image .item li {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+#image .item li .cover {
+    width: 18rem;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    margin-right:2rem;
+}
+#image .item li .cover:hover {
+    border: 1px solid #fff;
+}
+
+
+

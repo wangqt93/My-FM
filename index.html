@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="mainhead.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1804559_e3an8f3x4mi.css">
+</head>
+<body>
+    <main id="music">
+        
+        <section id="music-main">
+            <div class="container">
+                <div class="music_left">
+                    <div id="left_image"></div>
+                    <div id="icon">
+                        <div class="iconfont icon-love"></div>
+                        <div class="two_icon">
+                            <div class="iconfont icon-play active"></div>
+                            <div class="iconfont icon-zanting"></div>
+                        </div>
+                        <div class="iconfont icon-next"></div>
+                    </div>
+                </div>
+                <div class="music_right">
+                    <div class="lyric">
+                        <h2>90后</h2>
+                        <p>It's a new day</p>
+                    </div>
+
+                    <div id='right_icon'>
+                        <div class="iconfont icon-earphone"><span>3333</span></div>
+                        <div class="iconfont icon-like"><span>99</span></div>
+                        <div class="iconfont icon-good"><span>99</span></div>
+                    </div> 
+                    <div class="running"></div>
+                    <div class="writer">
+                        <h2>周杰伦</h2>  
+                        <p>hello world</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+     
+        <section id="music-footer">
+            <span class="leftbtn iconfont icon-left"></span>
+            <span class="rightbtn iconfont icon-right"></span>
+            <div id="image">
+                <ul class="item item1">               
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="backdrop"></div>
+    
+    <script src="main.js"></script>
+    <script src="http://tingapi.ting.baidu.com/v1/restserver/ting?size=20&type=2&callback=cb_list&_t=1468380543284&format=json&method=baidu.ting.billboard.billList"></script>
+    <script src="Play.js" ></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+#music-main {
+    height: 75vh;
+    padding-top: 5vh;
+}
+#music-main .container {
+    width: 80vw;
+    height: 70vh;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.music_left {
+
+}
+.music_right {
+    width: 55%;
+    height: 60vh;
+    display: inline-block;
+    margin-left: 5rem;
+    /* border: 1px solid yellow; */
+    color: #fff;
+}
+#left_image {
+    background: url(image/bigger.jpg) center no-repeat;
+    width: 50rem;
+    height: 50vh;
+    cursor: pointer;
+    margin-bottom: 3vh;
+}
+.music_left #icon {
+    width: 50rem;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+#icon .iconfont {
+    font-size: 4rem;
+    color:rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: all .3s;
+}
+#icon .iconfont:hover {
+    color: rgba(255,255,255,0.8);
+}
+#icon .icon-love.show {
+    color: red;
+}
+#icon .two_icon {
+    width: 5rem;
+    height: 5vh;
+}
+.two_icon>.iconfont {
+    position: absolute;
+    display: none;
+}
+.two_icon>.iconfont.active {
+    display: inline;
+}
+
+/*右边样式*/
+.music_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.music_right .lyric{
+    font-size: 2rem;
+}
+.music_right .lyric p {
+    /* margin-bottom: 2rem; */
+    margin-top: 3rem;
+}
+
+.music_right #right_icon {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+#right_icon .iconfont {
+    font-size: 3rem;
+    cursor: pointer;
+}
+#right_icon .iconfont>span {
+    font-size: 1.4rem;
+}
+.music_right .running {
+    width: 90%;
+    background: rgb(85, 83, 83);  
+}
+.music_right .running::after {
+    display: block;
+    content: '';
+    border-top: 5px solid #fff;
+    width: 5%;
+}
+.music_right .writer {
+    font-size: 2rem;
+}
+.music_right .writer h2 {
+    margin-bottom: 5rem;
+}
